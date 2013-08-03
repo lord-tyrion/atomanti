@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:wicket="http://wicket.apache.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>PartnerRegistrationPage</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <wicket:extend>
+            <form wicket:id="registrationForm">
+                <table>
+                    <tr>
+                        <td>
+                            <wicket:message key="userNameLabel" />
+                        </td>
+                        <td>
+                            <input wicket:id="userName" type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <wicket:message key="passwordLabel" />
+                        </td>
+                        <td>
+                            <input type="password" wicket:id="password" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <wicket:message key="passwordConfirmLabel" />
+                        </td>
+                        <td>
+                            <input type="password" wicket:id="passwordConfirm" />
+                        </td>
+                    </tr>
+                </table>
+                <!--<div wicket:id="registrationPanel" />-->
+                <!--<div>-->
+                <button><!--/wicket:id="signOnButton" type="submit">-->
+                    <wicket:message key="signOnLabel" />
+                </button>
+                <!--</div>-->
+            </form>
+        </wicket:extend>
+    </body>
+</html>

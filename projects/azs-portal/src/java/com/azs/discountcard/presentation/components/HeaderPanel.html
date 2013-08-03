@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  
+      xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd"  
+      xml:lang="en"  
+      lang="en"> 
+    <head><title>Wicket Example</title></head>
+    <body>
+        <wicket:panel>
+            <img src="images/logo.png" />
+            <ul>
+                <li wicket:id="authorizedContent">
+                    <a wicket:id="myCompanyLink">
+                        <wicket:message key="myAccountLabel" />
+                    </a>
+                </li>
+                <wicket:link>
+                    <li>
+                        <a href="partners">
+                            <wicket:message key="partnersLabel" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services">
+                            <wicket:message key="servicesLabel" />
+                        </a>
+                    </li>
+                    <li><a><wicket:message key="bazaarLabel" /></a></li>
+                </wicket:link>
+            </ul>
+            <div>
+                <img src="images/searchIcon.png" />
+                <input />
+            </div>
+            <div wicket:id="authenticationPanel" />
+            <wicket:fragment wicket:id="visitorFragment">
+                <a href="registration">
+                    <wicket:message key="signOnLabel" />
+                </a>
+                <a href="login">
+                    <wicket:message key="signInLabel" />
+                </a>
+            </wicket:fragment>
+            <wicket:fragment wicket:id="userFragment">
+                <label wicket:id="userName" />
+                <a wicket:id="signOutLink">
+                    <wicket:message key="signOutLabel" />
+                </a>
+            </wicket:fragment>
+            <div wicket:id="main-feedback" />
+        </wicket:panel>
+    </body>
+</html>

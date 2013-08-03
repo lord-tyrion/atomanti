@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:wicket="http://wicket.apache.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>ContentManagerPage</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <wicket:extend>
+            <wicket:fragment wicket:id="imageImporterFragment">
+                <span wicket:id="imagKey" />
+                <img wicket:id="imageContent" />
+                <input type="file" wicket:id="imageUploadField" />
+            </wicket:fragment>
+            <wicket:fragment wicket:id="titleImporterFragment">
+                <span wicket:id="titleKey" />
+                <input type="text" wicket:id="titleField" />
+            </wicket:fragment>
+            <wicket:fragment wicket:id="contentTextImporterFragment">
+                <span wicket:id="contentKey" />
+                <textarea wicket:id="contentField"></textarea>
+            </wicket:fragment>
+            <wicket:child />
+        </wicket:extend>
+    </body>
+</html>

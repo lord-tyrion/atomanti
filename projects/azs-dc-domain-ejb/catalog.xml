@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/home/lordbacchus/development/azs1/projects/azs-dc-domain-ejb/../azs-businesscard-domain/src/conf/xml-resources/jaxb/SuggestionPoints/SuggestionPoints.xsd" uri="src/conf/xml-resources/jaxb/SuggestionPointsBinding/SuggestionPoints.xsd"/>
+</catalog>

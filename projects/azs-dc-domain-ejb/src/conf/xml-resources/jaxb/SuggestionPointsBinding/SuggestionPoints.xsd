@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           targetNamespace="azs" xmlns:ns="azs">
+    <xs:simpleType name="suggestion-point">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="suggestion-title">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="suggestion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="suggestion-item" type="ns:suggestion-point" maxOccurs="unbounded"></xs:element>
+                <xs:element name="main-title" type="ns:suggestion-title"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

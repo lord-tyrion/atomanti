@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<orgns:suggestion
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:orgns='azs'
+    xsi:schemaLocation='azs file:/home/lordbacchus/development/azs/projects/azs-businesscard-domain/src/java/com/azs/businesscard/domain/entities/SuggestionPoints.xsd'>
+    <orgns:suggestion-item>Indok 1</orgns:suggestion-item>
+    <orgns:suggestion-item>Indok 2</orgns:suggestion-item>
+    <orgns:suggestion-item>Indok 3</orgns:suggestion-item>
+    <orgns:main-title>Miért pont én?</orgns:main-title>
+
+</orgns:suggestion>
