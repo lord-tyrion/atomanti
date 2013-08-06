@@ -1,0 +1,68 @@
+INSTALL_HOME=./
+APPLICATION_NAME=postgresql
+INSTALL_SCRIPT=test.sh
+#INSTALL_SCRIPT=install-postgresql.sh
+
+testApplicationInstalled() {
+	if [ -z "$1" ]                           # Is parameter #1 zero length?
+   	then
+		echo "-Parameter application is zero length.-"  # Or no parameter passed.
+		return -1
+	else
+		echo "-Parameter application is \"$1\".-"
+	fi
+
+	if [ $(dpkg -l | grep -c $1) -ne 0 ]
+	then
+		echo "$1 INSTALLED"
+		TEMP=0
+		return 0;
+	else
+		echo "$1 NOT INSTALLED"
+		TEMP=1
+		return 1
+	fi 
+}
+
+resolveApplicationDependency() {
+	echo "TEST $1 APPLICATION INSTALLED ..."
+
+	if [ -z "$1" ]                           # Is parameter #1 zero length?
+   	then
+		echo "-Parameter application is zero length.-"  # Or no parameter passed.
+		return -1
+	else
+		echo "-Parameter application is \"$1\".-"
+	fi
+
+	if [ -z "$2" ]                           # Is parameter #2 zero length?
+   	then
+		echo "-Parameter install script is zero length.-"  # Or no parameter passed.
+		return -1
+	else
+		echo "-Parameter install script is \"$2\".-"
+	fi
+
+	testApplicationInstalled $1
+
+	if [ ${TEMP} -eq 0 ]
+	then
+
+		return 0
+	else
+		echo "INSTALL $1 ..."
+		sh ${INSTALL_HOME}/$2
+
+		testApplicationInstalled $1
+	fi
+}
+
+cd ${INSTALL_HOME}
+pwd
+
+resolveApplicationDependency postgresql ${INSTALL_SCRIPT}
+#
+resolveApplicationDependency java ${INSTALL_SCRIPT}
+
+
+
