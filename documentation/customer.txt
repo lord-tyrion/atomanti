@@ -1,0 +1,18 @@
+Cégnév: 
+Képviselő/ügyvezető neve, adószáma:
+Székhely:
+Adószám:
+Cégjegyzék szám: 
+Kibocsájtó cégbíróság:
+Elektronikus elérhetőség (e-számla fogadáshoz is):
+Telefonos elérhetőség:
+Bankszámlaszáma:
+Személyes közreműködő neve és adóazonosító jele:
+Személyes közreműködő telefonszáma:
+Együttműködés mely országra/országokra érvényes:
+Tevékenységi kör/körök
+Regisztráció, mint:
+Kedvezmény adó partner: 
+Együttműködő partner:
+
+Ajánló neve, ID-ja:
